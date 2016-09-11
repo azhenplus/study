@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div(class="hero-unit")
+    h1= title
+    h2 Welcome #{currentUser}
+    a(class="btn btn-primary btn-large" href="/users/login")="登录"
+    a(class="btn btn-large" href="/users/register")="立即注册"
+    hr
+    a(class="btn btn-large" href="/users/article")="发表文章"
+
+

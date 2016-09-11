@@ -1,0 +1,21 @@
+//Created by mac on 16/9/2.
+
+extends ../layout
+
+block content
+  div(id="alert-div")
+  form(id="register-form")
+   div
+      span 姓名:
+      input(type="text" name="register" required='required')
+   div
+      span 密码:
+      input(type="password" name="password" required='required')
+      span(id="confirm-password-alert")
+   div
+      span 确认密码:
+      input(type="password" name="passwordconfirm" required='required')
+   div
+      input(type="submit" value="注册")
+   script(src="/node_modules/js-md5/build/md5.min.js")
+   script(src="/javascripts/register.js")

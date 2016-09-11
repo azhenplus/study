@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome  #{currentUser}
+  a(href="users/login")="login"
+  span or
+  a(href="users/register")="register"

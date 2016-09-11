@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+
+
+
+  each row in rows
+    div(class="img-container")
+      div(class="img-description")=row.description
+      div(class="img")
+        img(src=row.path)

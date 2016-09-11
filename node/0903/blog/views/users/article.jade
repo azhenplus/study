@@ -1,0 +1,17 @@
+//
+   Created by mac on 16/9/4.
+extends ../layout
+block content
+    form(id="article-form" role="form")
+        div
+            span 标题:
+            input(class="form-control" type="text" name="title")
+        div
+            p 正文:
+            textarea(class="form-control" name="post" rows="10")
+            br
+            input(class="form-control" type="submit" value="发表")
+
+    script(src="/javascripts/article.js")
+
+
